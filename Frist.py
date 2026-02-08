@@ -1,9 +1,36 @@
-# Python - Slicing Strings
-# strip() គឺជា function របស់ string ក្នុង Python
-# វាធ្វើការ លុបចន្លោះ (space), tab (\t), newline (\n) នៅ
+# &=
+# Ex
+x=3
+# 5 = 0101
+# 3 = 0011
+# -----------
+#     0001 = 1
+# x &= 5
+# =>x=1
+# print(x)
+
+# Ex2
+# |=
+# x |= 5
+# print(x)
+# 5 = 0101
+# 3 = 0011
+# -----------
+#     0111 = 7
+
+# Ex3
 #
-# ខាងមុខ (left side)
-#
-# ខាងក្រោយ (right side)
-hi=" jello,world! "
-print(hi.split())
+# x ^= 5
+# print(x)
+# 5 = 0101
+# 3 = 0011
+# -----------
+#     0110 = 6
+
+# Ex4
+
+# x>>=5
+# print(x)
+
+x<<=5
+print(x)
