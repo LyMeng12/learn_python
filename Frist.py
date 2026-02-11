@@ -1,35 +1,12 @@
-a = 'Hello'
-b = "Hello"
+# while(name:=input("Enter Your name: ") )!= "exex":
+#     print(f"Hello {name}, welcome to Python!")
 
-print(a)
-print(b)
-print(type(a), type(b))
+# year = int(input("Enter the year: "))
+# print("You are ",year," years old")
 
-# String
-name = "Meng"
-print(f'Hello {name}')
-print(f"Hello {name}")
-
-# Slixing String
-b = "Hello, World!"
-print(b[-7:-2])
-
-# Format String
-s=67
-txt=f"I'm {s} years old"
-print(txt)
-price = 59
-txt = f"The price is {price:.2f} dollars"
-print(txt)
-
-# Escape Characters
-# Code	================ Result
-# \'      ================ Single Quote
-# \\      ================ Backslash
-# \n      ================ New Line
-# \r	    ================ Carriage Return
-# \t	    ================ Tab
-# \b	    ================ Backspace
-# \f	    ================ Form Feed
-# \ooo	================ Octal value
-# \xhh	================ Hex value
+# while(num :=int(input("Enter Your Number: ")))!=0:
+#     Opp = num % 2
+#     if(Opp==0):
+#         print("Odd number")
+#     elif(Opp!=0):
+#         print("Even number")
