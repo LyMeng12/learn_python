@@ -1,12 +1,13 @@
-# while(name:=input("Enter Your name: ") )!= "exex":
-#     print(f"Hello {name}, welcome to Python!")
+# Python List
+from tkinter.font import names
+          # 0        1         2         3        4       5        6
+names = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+           #-7       -6        -5        -4       -3       -2        -1
 
-# year = int(input("Enter the year: "))
-# print("You are ",year," years old")
+# Access List Items
+print(names[4:6])
+print(names[-7:-2])
 
-# while(num :=int(input("Enter Your Number: ")))!=0:
-#     Opp = num % 2
-#     if(Opp==0):
-#         print("Odd number")
-#     elif(Opp!=0):
-#         print("Even number")
+# Change List Items
+
+
