@@ -1,0 +1,5 @@
+thistuple=("Meng",20,"Math")
+print(thistuple)
+print("========================")
+print("Student Name: ",thistuple[0])
+print("Student Age: ",thistuple[1])
