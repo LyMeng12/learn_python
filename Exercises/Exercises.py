@@ -1,5 +1,2 @@
-dayTupke=("Mon", "Tue","Wed","Thu","Fre","Sat","Sun")
-
-print("Today is ",dayTupke[1])
-print("Today is ",dayTupke[6])
-print("Today is ",dayTupke[2])
+student=("meng","lyly","nara","kaka","jana")
+print("School have ",len(student),"Students.")
