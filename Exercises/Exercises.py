@@ -1,5 +1,5 @@
-thistuple=("Meng",20,"Math")
-print(thistuple)
-print("========================")
-print("Student Name: ",thistuple[0])
-print("Student Age: ",thistuple[1])
+dayTupke=("Mon", "Tue","Wed","Thu","Fre","Sat","Sun")
+
+print("Today is ",dayTupke[1])
+print("Today is ",dayTupke[6])
+print("Today is ",dayTupke[2])
