@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "meng",
+    "Gender": "Female",
+    "Age": 21,
+    "Password": "123",
+    "Phone": "069607541",
+    "role": "customer",
+    "Money": 100.0
+  },
+  {
+    "id": 1,
+    "name": "mengadmin",
+    "Gender": "Female",
+    "Age": 21,
+    "Password": "123",
+    "Phone": "069607541",
+    "role": "admin",
+    "Money": 100.0
+  }
+]
