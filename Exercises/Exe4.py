@@ -1,4 +1,7 @@
+from tabulate import tabulate
+
 amount=0
+
 name=[]
 gender=[]
 age=[]
@@ -27,7 +30,7 @@ if amount==0:
         while True:
             try:
                 Age = int(input("Enter Student Age: "))
-                if Age>0 or Age<100:
+                if Age>0 or Age<50:
 
                     break
             except ValueError:
@@ -35,7 +38,7 @@ if amount==0:
         while True:
             try:
                 Score = float(input("Enter Student Score: "))
-                if Score>0:
+                if Score>0 or Score<150:
 
                     break
             except ValueError:
@@ -68,14 +71,14 @@ elif amount!=0:
         while True:
             try:
                 Age = int(input("Enter Student Age: "))
-                if Age > 0 or Age < 100:
+                if Age > 0 or Age < 50:
                     break
             except ValueError:
                 print("Invalid Input!")
         while True:
             try:
                 Score = float(input("Enter Student Score: "))
-                if Score > 0:
+                if Score > 0 or Score < 150:
                     break
             except ValueError:
                 print("Invalid Input!")
@@ -90,28 +93,33 @@ index =0
 sc=0;
 bigger=score.copy()
 bigger.sort(reverse=True)
-print(bigger)
 tname=[]
+table = []
 
 print("=============== Student Information ===============")
-print("#\t\tName\t\tGender\t\tAge\t\tScore")
 for i in range(len(name)):
-    if gender[i]=="male":
-        ma+=1
-    elif gender[i]=="female":
-        fe+=1
-    print(f"{i+1}\t\t{name[i]}\t\t{gender[i]}\t\t{age[i]}\t\t{score[i]}")
-    index=i+1
-print("===================================================")
-print(f"Total Student:{index}")
-print(f"Male:{ma},Female:{fe}")
+    if gender[i] == "male":
+        ma += 1
+    elif gender[i] == "female":
+        fe += 1
 
+    table.append([i+1, name[i], gender[i], age[i], score[i]])
+
+headers = ["#", "Name", "Gender", "Age", "Score"]
+
+print(tabulate(table, headers=headers, tablefmt="github"))
+
+print("===================================================")
+print(f"Total Student: {len(name)}")
+print(f"Male: {ma}, Female: {fe}")
+print("===================================================")
+print("====================Top Rank===========================")
 for i in range(len(name)):
     for j in range(len(name)):
         if score[j] == bigger[i]:
-            tname.append(name[j])
-            break
-
+            if name[j] not in tname:
+                tname.append(name[j])
+                break
 top_rank=[]
 for i in range(len(score)):
     for j in range(len(score)):
@@ -125,8 +133,9 @@ count=1
 for i in range(len(top_rank)):
     for j in range(len(score)):
         if top_rank[i]==bigger[j]:
-            print(f"Top {id} Score: {tname[j]} - {bigger[j]}" )
-            count+=1
+            if id<=3:
+                print(f"Top {id} Score: {tname[j]} - {bigger[j]}")
+                count += 1
     id=count
 
 print("===================================================")
