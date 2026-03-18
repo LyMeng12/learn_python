@@ -24,7 +24,6 @@ while True:
 
     x=float(qty)
     if more == "y":
-
         price_list.append(x*price)
     elif more == "n":
         price_list.append(x*price)
